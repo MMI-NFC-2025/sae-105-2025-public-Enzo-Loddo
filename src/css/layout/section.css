@@ -1,0 +1,16 @@
+main {
+  padding-top: 100px; /* Espace pour ne pas être caché par le header */
+  min-height: 80vh;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: var(--space-lg);
+}
+
+.form-container {
+  max-width: 500px; /* Largeur max de la carte */
+  margin: 0 auto;   /* Centrage horizontal */
+  padding: 0 var(--space-md);
+}

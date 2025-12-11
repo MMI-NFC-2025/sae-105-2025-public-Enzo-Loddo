@@ -1,0 +1,47 @@
+form {
+  background-color: var(--color-bg-card); /* Le fond gris foncé */
+  padding: var(--space-lg);
+  border-radius: var(--radius-lg);        /* Les gros arrondis */
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+label {
+  font-size: 0.95rem;
+  color: var(--color-text-main);
+  margin-left: 5px; /* Petit alignement visuel */
+}
+
+/* Style des champs (INPUTS) */
+input, textarea {
+  background-color: var(--color-bg-input); /* Gris clair */
+  border: none;
+  border-radius: var(--radius-md);         /* Bords arrondis des champs */
+  padding: 12px 15px;
+  font-family: var(--font-sans);
+  color: var(--color-text-input);
+  font-size: 1rem;
+  width: 100%;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 150px; /* Hauteur du champ message */
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--color-text-placeholder);
+}
+
+input:focus, textarea:focus {
+  outline: 2px solid #555;
+  background-color: #fff;
+}
