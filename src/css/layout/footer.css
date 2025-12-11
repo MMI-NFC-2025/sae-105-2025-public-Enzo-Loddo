@@ -1,8 +1,8 @@
 .footer {
-  background-color: var(--color-bg);
+  background-color: #d12121;;
   padding: var(--space-lg) var(--space-md);
   margin-top: var(--space-xl);
-  border-top: 1px solid #222;
+  border-top: 1px solid #1B1B1B;
   font-size: 0.9rem;
 }
 
@@ -53,5 +53,24 @@
 }
 .social-icons img {
   width: 24px;
-  filter: invert(1);
+  filter: invert(0);
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between; /* Pousse le menu à gauche et le logo à droite */
+  align-items: flex-start;        /* Aligne les éléments en haut */
+  width: 100%;
+  margin-bottom: var(--space-lg);
+}
+
+
+.footer-deco img {
+  width: 60px; /* Changez cette valeur pour réduire la taille (ex: 50px, 40px) */
+  height: auto;
+  filter: invert(1); /* Assure que le logo est blanc sur fond noir */
+  
+  /* Si vous voulez le coller encore plus à droite */
+  display: block;
+  margin-left: auto; 
 }
