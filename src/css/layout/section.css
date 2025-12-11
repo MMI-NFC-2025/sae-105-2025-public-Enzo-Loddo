@@ -1,16 +1,9 @@
-main {
-  padding-top: 100px; /* Espace pour ne pas être caché par le header */
-  min-height: 80vh;
+.prog-list { margin: var(--space-lg) 0; }
+.prog-item { 
+    margin-bottom: var(--space-md); 
+    border-bottom: 1px solid #222; 
+    padding-bottom: 10px; 
 }
-
-.page-title {
-  text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: var(--space-lg);
-}
-
-.form-container {
-  max-width: 500px; /* Largeur max de la carte */
-  margin: 0 auto;   /* Centrage horizontal */
-  padding: 0 var(--space-md);
-}
+.prog-item h3 { font-size: 1.1rem; margin-bottom: 5px; }
+.prog-item p { color: var(--color-text-muted); font-size: 0.9rem; }
+.divider-line { height: 1px; background: #333; margin: 40px 0; }

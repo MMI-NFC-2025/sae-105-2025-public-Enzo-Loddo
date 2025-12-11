@@ -1,11 +1,12 @@
 footer {
   padding: var(--space-xl) var(--space-lg);
   background-color: var(--color-bg-body);
-  margin-top: var(--space-xxl); /* Espace avant le footer */
+  margin-top: var(--space-xxl);
   font-size: 0.9rem;
+  border-top: 1px solid #222;
 }
 
-/* Grille Footer (Desktop : 4 colonnes, Mobile : 1 colonne) */
+/* Grille Responsive */
 .footer-grid {
   display: grid;
   gap: var(--space-lg);
@@ -19,52 +20,33 @@ footer {
   }
 }
 
-/* Liens de navigation */
 .footer-nav {
   display: flex;
   flex-direction: column;
-  gap: var(--space-xs);
+  gap: 10px;
   font-family: var(--font-serif);
   font-size: 1.1rem;
 }
 
-/* Titres des sections footer */
-.footer-legal h3,
-.footer-contact h3,
-.footer-social h3 {
+.footer-section h3 {
   font-family: var(--font-sans);
   font-weight: 700;
   text-transform: uppercase;
   font-size: 0.8rem;
-  margin-bottom: var(--space-sm);
+  margin-bottom: 1rem;
   color: var(--color-text-main);
 }
 
-.footer-legal p,
-.footer-contact p {
-  color: #888; /* Texte un peu plus gris */
-  line-height: 1.4;
+.footer-section p {
+  color: var(--color-text-muted);
+  margin: 0;
 }
 
-/* Icônes réseaux sociaux */
-.footer-social .icons {
+.social-icons {
   display: flex;
-  gap: var(--space-sm);
+  gap: 1rem;
 }
-.footer-social img {
-  width: 20px;
+.social-icons img {
+  width: 24px;
   filter: invert(1);
-}
-
-/* Silhouette Danseuse (Décoration) */
-.footer-deco {
-  display: none; /* Caché sur mobile pour gagner de la place */
-}
-@media (min-width: 768px) {
-  .footer-deco {
-    display: block;
-    justify-self: end;
-    opacity: 0.7;
-    max-width: 100px;
-  }
 }

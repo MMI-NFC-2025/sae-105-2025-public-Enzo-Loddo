@@ -3,3 +3,23 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+/* Images qui s'adaptent sans se déformer */
+.hero__image, 
+.full-width-image img,
+.artist-portrait img,
+.scene-card img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: var(--radius-sm);
+}
+
+/* Hauteur spécifique pour uniformiser */
+.hero__image { height: 300px; }
+.artist-portrait img { height: 350px; }
+.scene-card img { height: 250px; }
+
+/* Noir et blanc artistique */
+.grayscale-img {
+    filter: grayscale(100%);
+}

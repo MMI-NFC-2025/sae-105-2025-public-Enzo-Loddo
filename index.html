@@ -1,25 +1,48 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chorus Symphonia - Accueil</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="src/css/style.css">
-</head>
-<body>
 
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Festicloze</title>
+    <link rel="stylesheet" type="text/css" href="src/css/style.css" />
+    <script src="src/js/script.js" defer></script>
+</head>
+
+<body>
     <header class="header">
-        <div class="header__logo">
-             <img src="assets/image/logo.png" alt="Logo Danseuse">
-        </div>
-        <button class="menu-button" aria-label="Menu">
-            <span></span>
-            <span></span>
-            <span></span>
+
+        <button class="headermenu-button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mainNav">
+            <span class="menu-buttonbar" aria-hidden="true"></span>
+            <span class="menu-buttonbar" aria-hidden="true"></span>
+            <span class="menu-buttonbar" aria-hidden="true"></span>
         </button>
+
+        <nav class="headermenu menu" id="mainNav" hidden>
+            <ul class="menulist">
+                <li class="menuitem">
+                    <a class="menulink" href="/1.index.html">Accueil</a>
+                </li>
+                <li class="menuitem">
+                    <a class="menulink" href="/2.Le festival.html">PRÉSENTAION</a>
+                </li>
+                <li class="menuitem">
+                    <a class="menulink" href="/3.La programmation.html">PROGRAMMATION</a>
+                </li>
+                <li class="menuitem">
+                    <a class="menulink" href="/4.Artiste.html">LISTE DES GROUPES</a>
+                </li>
+                <li class="menuitem">
+                    <a class="menulink" href="/7.Scénes.html">LA SCENE</a>
+                </li>
+                <li class="menuitem">
+                    <a class="menulink" href="/8.infos pratiques.html">INFOS PRATIQUES</a>
+                </li>
+                <li class="menuitem">
+                    <a class="menulink" href="/9.contact.html">CONTACT</a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
     <main class="main-content">

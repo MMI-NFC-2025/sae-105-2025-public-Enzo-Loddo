@@ -1,0 +1,35 @@
+/* --- Compteurs Accueil --- */
+.stats-container {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-lg);
+    margin-top: var(--space-lg);
+}
+.stat-box {
+    width: 60px; height: 60px;
+    background: rgba(255,255,255,0.1);
+    display: flex; justify-content: center; align-items: center;
+    font-family: var(--font-serif); font-size: 2rem;
+    border-radius: 4px; margin-bottom: 5px;
+}
+.stat-item { text-align: center; }
+.stat-label { font-size: 0.7rem; letter-spacing: 2px; color: var(--color-text-muted); }
+
+/* --- Cartes Scènes --- */
+.scene-card { margin-bottom: var(--space-xl); }
+.separator { border: 0; border-top: 1px solid #333; margin: var(--space-xl) 0; }
+
+/* --- Cartes Blanches (Infos Pratiques) --- */
+.ticket-card {
+    background-color: var(--color-bg-white);
+    color: var(--color-text-dark);
+    border-radius: var(--radius-sm);
+    padding: var(--space-md);
+    margin-bottom: var(--space-md);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ticket-info h3 { color: #000; font-weight: 700; font-size: 1.1rem; margin: 0; }
+.ticket-info p { color: #555; font-size: 0.9rem; margin: 5px 0 0 0; }
+.price { font-size: 1.8rem; font-family: var(--font-serif); margin-right: 15px; }
