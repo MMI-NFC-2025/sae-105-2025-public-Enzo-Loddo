@@ -1,34 +1,27 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Festicloze - Scènes</title>
-    <link rel="stylesheet" type="text/css" href="src/css/style.css" />
-    <script src="src/js/script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Festicloze</title>
+    <link rel="stylesheet" href="src/css/style.css">
 </head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="assets/logo.png" alt="Logo">
+        </div>
+        <button class="menu-button">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
 
 <body>
 
-    <header class="header">
-        <button class="header__toggle" aria-label="Ouvrir le menu principal" aria-expanded="false" aria-controls="mainNav">
-            <span class="header__bar" aria-hidden="true"></span>
-            <span class="header__bar" aria-hidden="true"></span>
-            <span class="header__bar" aria-hidden="true"></span>
-        </button>
-
-        <nav class="header__nav" id="mainNav" hidden aria-label="Navigation principale">
-            <ul class="header__list">
-                <li class="header__item"><a class="header__link" href="/">Accueil</a></li>
-                <li class="header__item"><a class="header__link" href="/Le festival.html">Le festival</a></li>
-                <li class="header__item"><a class="header__link" href="/La programmation.html">La programmation</a></li>
-                <li class="header__item"><a class="header__link" href="/Artiste.html">Artistes</a></li>
-                <li class="header__item"><a class="header__link" href="/Scénes.html">Scènes</a></li>
-                <li class="header__item"><a class="header__link" href="/Info pratique.html">Infos pratiques</a></li>
-                <li class="header__item"><a class="header__link" href="/Contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    
 
     <main class="main-content">
         <section class="scenes">
@@ -64,36 +57,40 @@
         </section>
     </main>
 
-    <footer class="footer" style="margin-top: 80px; background-color: #f0f0f0; padding: 20px;">
+ <footer class="footer">
         
-        <div class="footer__section footer__section--nav">
-            <h3 class="footer__title">Navigation</h3>
-            <nav aria-label="Liens du pied de page">
-                <a class="footer__link" href="/Menu.html">Menu</a><br>
-                <a class="footer__link" href="/Glossaire">Glossaire</a><br>
-                <a class="footer__link" href="/Autre projet">Autres projets</a><br>
-                <a class="footer__link" href="/Contact.html">Nous contacter</a>
+        <div class="footer-top">
+            <nav class="footer-nav">
+                <a href="#">Menu</a>
+                <a href="#">Glossaire</a>
+                <a href="#">Autres projets</a>
+                <a href="#">Nous contacter</a>
             </nav>
+            <div class="footer-deco">
+                <img src="assets/image/silhouette.png" alt="Silhouette">
+            </div>
         </div>
 
-        <div class="footer__section footer__section--info">
-            <h3 class="footer__title">Mentions légales</h3>
-            <p class="footer__text">Projet réalisé en 2025 dans le cadre d’un exercice pédagogique au département MMI de Montbéliard</p>
-            
-            <h3 class="footer__title">Contact</h3>
-            <p class="footer__text">
-                Loddo Enzo<br>
-                Groupe B1<br>
-                enzo.loddo@edu.univ-fcomte.fr
-            </p>
+        <div class="footer-section">
+            <h3>Mention Légal</h3>
+            <p>Projet réalisé en 2025 dans le cadre d'un exercice pédagogique au departement MMI de Montbéliard</p>
         </div>
 
-        <div class="footer__section footer__section--socials">
-            <h3 class="footer__title">Nous suivre</h3>
-            <img class="footer__icon" src="/assets/image/instagram.webp" alt="Instagram" />
-            <img class="footer__icon" src="/assets/image/facebook.webp" alt="Facebook" />
-            <img class="footer__icon" src="/assets/image/youtube.webp" alt="YouTube" />
-            <img class="footer__icon" src="/assets/image/twitter.webp" alt="Twitter" />
+        <div class="footer-section">
+            <h3>CONTACT</h3>
+            <p>Loddo Enzo</p>
+            <p>Groupe B1</p>
+            <p>enzo.loddo@edu.univ-fcomte.fr</p>
+        </div>
+
+        <div class="footer-section">
+            <h3>NOUS SUIVRE</h3>
+            <div class="social-icons">
+                <img src="assets/image/instagram.webp" alt="Instagram">
+                <img src="assets/image/facebook.webp" alt="Facebook">
+                <img src="assets/image/youtube.webp" alt="Youtube">
+                <img src="assets/image/twitter.webp" alt="Twitter">
+            </div>
         </div>
     </footer>
 

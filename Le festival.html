@@ -3,90 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chorus Symphonia - Accueil</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Le Festival - Chorus Symphonia</title>
+    <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
-
     <header class="header">
-        <button class="header__toggle" aria-label="Ouvrir le menu principal" aria-expanded="false" aria-controls="mainNav">
-            <span class="header__bar" aria-hidden="true"></span>
-            <span class="header__bar" aria-hidden="true"></span>
-            <span class="header__bar" aria-hidden="true"></span>
-        </button>
-
-        <nav class="header__nav" id="mainNav" hidden>
-            </nav>
+        <div class="header__logo"><img src="assets/image/logo.png" alt="Logo"></div>
+        <button class="menu-button"><span></span><span></span><span></span></button>
     </header>
 
     <main class="main-content">
-        <section class="hero">
-            <div class="hero__content">        
-                <div class="hero__image-container">
-                    <img class="hero__image" src="/assets/Image/Hero festival.webp" alt="Vue panoramique du festival Chorus Symphonia" />
-                </div>
-            </div>
+        <div class="full-width-image">
+            <img src="assets/image/Hero festival.webp" alt="La Citadelle de Besançon dans la brume">
+        </div>
 
-            <div class="hero__text-content">
-                <h1 class="hero__title">Le Chorus Symphonia: L’histoire</h1>
-                <p class="hero__subtitle">
-                    "Du <strong>28 au 31 août 2026</strong> le Chorus Symphonia ouvre la fin de l’été avec un rendez‑vous dédié à la musique classique sous toutes ses formes.
-                </p> 
-                <p class="hero__description">
-                    Dans le cadre majestueux de la Citadelle de Besançon, le festival réunit grands interprètes, jeunes talents et créations originales, offrant quatre jours d’émotion et de découverte.
-                </p>
-            </div>
-           
-           <img class="section-image" src="/assets/image/Image festival 1.webp" alt="Orchestre jouant dans la cour de la citadelle" />
+        <section class="content-block">
+            <h1 class="page-title">Le Chorus Symphonia: L’histoire</h1>
+            <p>Du <strong>28 au 31 août 2026</strong> le Chorus Symphonia ouvre la fin de l’été avec un rendez-vous dédié à la musique classique sous toutes ses formes.</p>
+            <p>Dans le cadre majestueux de la Citadelle de Besançon, le festival réunit grands interprètes, jeunes talents et créations originales, offrant quatre jours d’émotion et de découverte.</p>
         </section>
 
-        <section class="promise">
-            <h2 class="promise__title">Sa promesse</h2>
-                
-            <p class="promise__text">Le Chorus Symphonia transforme la Citadelle de Besançon en un lieu d’émotion et de partage autour de la musique classique.</p>
-            <p class="promise__text">Pendant quatre jours, le festival réunit aussi bien les mélomanes passionnés que les curieux désireux de découverte.</p>
-            
-            <img class="section-image" src="/assets/Image/Image festival 2.webp" alt="Public attentif lors d'un concert en plein air" />
-            
-            <p class="promise__text">Pensé comme un pont entre générations, Chorus Symphonia s’adresse aux amateurs éclairés autant qu’aux jeunes publics souhaitant explorer l’univers du classique autrement.</p>
-            <p class="promise__text">Concerts symphoniques, récitals intimes et moments de rencontre créent un dialogue vivant entre tradition et modernité, rendant la musique accessible à tous.</p>
+        <div class="full-width-image">
+            <img src="assets/image/Image festival 1.webp" alt="Troupe de ballet à l'opéra">
+        </div>
 
-            <h2 class="promise__cta">Alors qu’attendez vous, c’est à votre tour de faire résonner la Franche-Comté</h2>
+        <section class="content-block">
+            <h2>Sa promesse</h2>
+            <p>Le Chorus Symphonia transforme la Citadelle de Besançon en un lieu d’émotion et de partage autour de la musique classique. Pendant quatre jours, le festival réunit aussi bien les mélomanes passionnés que les curieux désireux de découverte.</p>
+        </section>
+
+        <div class="full-width-image">
+            <img src="assets/image/Image festival 2.webp" alt="Chef d'orchestre">
+        </div>
+
+        <section class="content-block">
+            <p>Pensé comme un pont entre générations, Chorus Symphonia s'adresse aux amateurs éclairés autant qu'aux jeunes publics. Concerts symphoniques, récitals intimes et moments de rencontre créent un dialogue vivant.</p>
+            
+            <h2 class="cta-text">Alors qu’attendez vous, c’est a votre tours de faire résonner la franche-comté</h2>
         </section>
     </main>
-
-    <footer class="footer" style="margin-top: 80px; background-color: #f0f0f0; padding: 20px;"> 
+<footer class="footer">
         
-        <section class="footer__section footer__section--nav">
-            <nav aria-label="Liens utiles">
-                <a class="footer__link" href="/Menu.html">Menu</a> <br>
-                <a class="footer__link" href="/Glossaire">Glossaire</a> <br>
-                <a class="footer__link" href="/Autre projet">Autres projets</a> <br>
-                <a class="footer__link" href="/Contact.html">Nous contacter</a>
+        <div class="footer-top">
+            <nav class="footer-nav">
+                <a href="#">Menu</a>
+                <a href="#">Glossaire</a>
+                <a href="#">Autres projets</a>
+                <a href="#">Nous contacter</a>
             </nav>
-        </section>
+            <div class="footer-deco">
+                <img src="assets/image/silhouette.png" alt="Silhouette">
+            </div>
+        </div>
 
-        <section class="footer__section footer__section--info">
-            <h3 class="footer__title">Mention légale</h3>
-            <p class="footer__text">
-                Projet réalisé en 2025 dans le cadre d’un exercice pédagogique au département MMI de Montbéliard 
-            </p>
+        <div class="footer-section">
+            <h3>Mention Légal</h3>
+            <p>Projet réalisé en 2025 dans le cadre d'un exercice pédagogique au departement MMI de Montbéliard</p>
+        </div>
 
-            <h3 class="footer__title">Contact</h3>
-            <p class="footer__text">
-                Loddo Enzo <br>
-                Groupe B1 <br>
-                enzo.loddo@edu.univ-fcomte.fr
-            </p>
-        </section>
+        <div class="footer-section">
+            <h3>CONTACT</h3>
+            <p>Loddo Enzo</p>
+            <p>Groupe B1</p>
+            <p>enzo.loddo@edu.univ-fcomte.fr</p>
+        </div>
 
-        <section class="footer__section footer__section--socials">
-            <h3 class="footer__title">Nous suivre</h3>
-            <img class="footer__icon" src="/assets/image/instagram.webp" alt="Instagram" />
-            <img class="footer__icon" src="/assets/image/facebook.webp" alt="Facebook" />
-            <img class="footer__icon" src="/assets/image/youtube.webp" alt="YouTube" />
-            <img class="footer__icon" src="/assets/image/twitter.webp" alt="Twitter" />
-        </section>
+        <div class="footer-section">
+            <h3>NOUS SUIVRE</h3>
+            <div class="social-icons">
+                <img src="assets/image/instagram.webp" alt="Instagram">
+                <img src="assets/image/facebook.webp" alt="Facebook">
+                <img src="assets/image/youtube.webp" alt="Youtube">
+                <img src="assets/image/twitter.webp" alt="Twitter">
+            </div>
+        </div>
     </footer>
 
 </body>

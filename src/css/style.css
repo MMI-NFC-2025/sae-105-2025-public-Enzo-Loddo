@@ -1,19 +1,398 @@
-/* 1. Vendors */
-@import "vendors/normalize.css";
+/* --- 1. CONFIGURATION GLOBALE --- */
+:root {
+    --bg-color: #050505;       /* Noir profond */
+    --text-color: #FFFFFF;     /* Blanc */
+    --accent-gray: #333333;    /* Gris pour les boites */
+    --font-serif: 'Playfair Display', serif;
+    --font-sans: 'Lato', sans-serif;
+    --spacing: 20px;
+}
 
-/* 2. Utils */
-@import "utils/variables.css";
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-/* 3. Base */
-@import "base/main.css";
-@import "base/media.css";
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-sans);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
 
-/* 4. Layout */
-@import "layout/header.css";
-@import "layout/footer.css";
-@import "layout/section.css";
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 
-/* 5. Components */
-@import "components/button.css";
-@import "components/form.css";
-@import "components/menu.css";
+/* Filtre noir et blanc pour les images comme sur la maquette */
+.grayscale-img {
+    filter: grayscale(100%);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* --- 2. HEADER --- */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.header__logo img {
+    height: 40px; /* Ajuster selon votre logo */
+    width: auto;
+    filter: invert(1); /* Rend le logo blanc */
+}
+
+.menu-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 30px;
+    height: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu-button span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    border-radius: 2px;
+}
+
+/* --- 3. SECTION HERO (ACCUEIL) --- */
+.hero {
+    padding-top: 80px; /* Espace pour le header */
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.hero__header-text {
+    margin-bottom: 30px;
+    padding: 0 20px;
+}
+
+.hero__date {
+    font-family: var(--font-serif);
+    font-size: 0.9rem;
+    font-style: italic;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.hero__title {
+    font-family: var(--font-serif);
+    font-size: 3rem; /* Gros titre */
+    font-weight: 400;
+    line-height: 1.1;
+    margin-bottom: 10px;
+}
+
+.hero__subtitle {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-size: 1rem;
+    color: #cccccc;
+}
+
+.hero__visual {
+    margin: 30px 0;
+    width: 100%;
+}
+
+.hero__visual img {
+    width: 100%;
+    object-fit: cover;
+    max-height: 400px; /* Limite la hauteur de l'image */
+}
+
+.hero__intro {
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+    padding: 0 20px;
+    font-size: 1.1rem;
+    line-height: 1.4;
+    font-weight: 300;
+}
+
+/* --- 4. STATISTIQUES --- */
+.stats-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Espace entre les items */
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stat-box {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.1); /* Carré gris transparent */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-serif);
+    font-size: 2rem;
+    margin-bottom: 10px;
+    border-radius: 4px; /* Légèrement arrondi */
+}
+
+.stat-label {
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #aaaaaa;
+}
+
+/* --- 5. FOOTER --- */
+.footer {
+    background-color: var(--bg-color);
+    padding: 40px 20px;
+    border-top: 1px solid #222;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-nav a {
+    font-family: var(--font-serif);
+    font-size: 1.2rem;
+}
+
+.footer-deco img {
+    width: 80px; /* Taille silhouette */
+    opacity: 0.5;
+    filter: invert(1);
+}
+
+.footer-section {
+    margin-bottom: 30px;
+}
+
+.footer-section h3 {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.footer-section p {
+    color: #888;
+    line-height: 1.4;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons img {
+    width: 24px;
+    filter: invert(1); /* Icônes blanches */
+}
+
+/* RESPONSIVE (Tablettes et Ordi) */
+@media (min-width: 768px) {
+    .stats-container {
+        gap: 80px;
+    }
+    
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        align-items: start;
+    }
+
+    .footer-top {
+        grid-column: 1 / -1; /* Prend toute la largeur en haut */
+        display: flex; 
+    }
+}/* --- STYLES SPÉCIFIQUES --- */
+
+/* 1. Images Pleine Largeur (Page Festival) */
+.full-width-image {
+    width: 100%;
+    margin: 40px 0;
+}
+.full-width-image img {
+    width: 100%;
+}
+.content-block {
+    padding: 0 20px;
+    margin-bottom: 40px;
+}
+.cta-text {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 40px;
+    line-height: 1.3;
+}
+
+/* 2. Liste Programmation */
+.prog-info {
+    margin-bottom: 30px;
+    font-family: var(--font-serif);
+}
+.prog-list {
+    margin-bottom: 30px;
+}
+.prog-item {
+    margin-bottom: 25px;
+}
+.prog-item h3 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+.prog-item p {
+    color: #888;
+    font-size: 0.9rem;
+}
+.divider-line {
+    height: 1px;
+    background-color: #333;
+    margin: 40px 0;
+}
+
+/* Bouton PDF */
+.pdf-download {
+    text-align: center;
+    margin-top: 40px;
+}
+.purple-diamond {
+    color: #a855f7;
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 10px;
+}
+.btn-pdf {
+    background-color: #ddd;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: 700;
+    font-family: var(--font-serif);
+}
+
+/* 3. Artiste */
+.artist-header {
+    margin-bottom: 30px;
+}
+.artist-name {
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+.artist-role {
+    font-style: italic;
+    color: #aaa;
+}
+.artist-portrait {
+    margin-bottom: 30px;
+}
+.artist-bio p {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* 4. Scènes */
+.scene-card {
+    margin-bottom: 40px;
+}
+.scene-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+.scene-location {
+    text-align: center;
+    color: #888;
+    margin-bottom: 20px;
+}
+.separator {
+    border: 0;
+    border-top: 1px solid #333;
+    margin: 60px 0;
+}
+
+/* 5. INFOS PRATIQUES (CARTES BLANCHES) */
+.section-subtitle {
+    margin-bottom: 30px;
+    font-family: var(--font-serif);
+}
+
+.ticket-card {
+    background-color: #FFFFFF; /* Fond blanc */
+    color: #000000;            /* Texte noir */
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ticket-info h3 {
+    color: #000; /* Titre noir */
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+.ticket-info p {
+    color: #555;
+    font-size: 0.9rem;
+}
+
+.ticket-action {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.price {
+    font-size: 1.8rem;
+    font-weight: 400;
+    font-family: var(--font-serif);
+}
+.btn-buy {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: var(--font-serif);
+}
