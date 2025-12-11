@@ -1,0 +1,16 @@
+.btn-submit {
+  background-color: var(--color-btn-bg);
+  color: var(--color-btn-text);
+  border: none;
+  padding: 10px 25px;
+  border-radius: 20px; /* Forme de pilule */
+  font-size: 1rem;
+  cursor: pointer;
+  align-self: flex-start; /* Aligné à gauche */
+  margin-top: var(--space-sm);
+  transition: background 0.3s;
+}
+
+.btn-submit:hover {
+  background-color: #555;
+}
