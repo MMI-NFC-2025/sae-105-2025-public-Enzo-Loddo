@@ -1,167 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Festicloze</title>
+    <title>Festicloze - Programmation</title>
     <link rel="stylesheet" type="text/css" href="src/css/style.css" />
     <script src="src/js/script.js" defer></script>
 </head>
 
 <body>
-    <header class="header">
 
-        <button class="headermenu-button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mainNav">
-            <span class="menu-buttonbar" aria-hidden="true"></span>
-            <span class="menu-buttonbar" aria-hidden="true"></span>
-            <span class="menu-buttonbar" aria-hidden="true"></span>
+    <header class="header">
+        <button class="header__toggle" aria-label="Ouvrir le menu principal" aria-expanded="false" aria-controls="mainNav">
+            <span class="header__bar" aria-hidden="true"></span>
+            <span class="header__bar" aria-hidden="true"></span>
+            <span class="header__bar" aria-hidden="true"></span>
         </button>
 
-        <nav class="headermenu menu" id="mainNav" hidden>
-            <ul class="menulist">
-                <li class="menuitem">
-                    <a class="menulink" href="/">Accueil</a>
+        <nav class="header__nav" id="mainNav" hidden>
+            <ul class="header__list">
+                <li class="header__item">
+                    <a class="header__link" href="/">Accueil</a>
                 </li>
-                   <li>
-                <a href="/Le festival.html">Le festival</a>
-            </li>
-            <li>
-                <a href="/La programmation.html">La programmation</a>
-            </li>
-            <li>
-                <a href="/Artiste.html">Artiste</a>
-            </li>
-            <li>
-                <a href="/Scénes.html">Scéne</a>
-            </li>
-            <li>
-                <a href="/Info pratique.html">Info pratiques</a>
-            </li>
-            <li>
-                <a href="/Contact.html">Contact</a>
-            </li>
+                <li class="header__item">
+                    <a class="header__link" href="/Le festival.html">Le festival</a>
+                </li>
+                <li class="header__item">
+                    <a class="header__link" href="/La programmation.html">La programmation</a>
+                </li>
+                <li class="header__item">
+                    <a class="header__link" href="/Artiste.html">Artistes</a>
+                </li>
+                <li class="header__item">
+                    <a class="header__link" href="/Scénes.html">Scènes</a>
+                </li>
+                <li class="header__item">
+                    <a class="header__link" href="/Info pratique.html">Infos pratiques</a>
+                </li>
+                <li class="header__item">
+                    <a class="header__link" href="/Contact.html">Contact</a>
+                </li>
             </ul>
         </nav>
     </header>
 
+    <main class="main-content program-page">
+        <h1 class="main-content__title">LA PROGRAMMATION</h1>
 
-
-
-
-<main class="page-content programmation-page">
-        <h1 class="page-title">LA PROGRAMMATION</h1>
-
-        <ul class="prog-info-header">
-            <p></p>Début :17h</p>
-            <p></p>Fin : 00h00</p>
+        <ul class="program-info">
+            <li class="program-info__item">Début : 17h</li>
+            <li class="program-info__item">Fin : 00h00</li>
         </ul>
 
-        <ul class="prog-list">
-            
-            <li class="prog-item">
-                <h3 class="prog-title">Ouverture du Festival - 19h</h3>
-                <p class="prog-scene">Scène 1</p>
+        <ul class="program-list">
+            <li class="program-item">
+                <h3 class="program-item__title">Ouverture du Festival - 19h</h3>
+                <p class="program-item__scene">Scène 1</p>
             </li>
 
-            <li class="prog-item">
-                <h3 class="prog-title">Benny Jansson - 20h45</h3>
-                <p class="prog-scene">Scène 1</p>
+            <li class="program-item">
+                <h3 class="program-item__title">Benny Jansson - 20h45</h3>
+                <p class="program-item__scene">Scène 1</p>
             </li>
 
-            <li class="prog-item">
-                <h3 class="prog-title">Marc Lavoine - 21h30</h3>
-                <p class="prog-scene">Scène 2</p>
+            <li class="program-item">
+                <h3 class="program-item__title">Marc Lavoine - 21h30</h3>
+                <p class="program-item__scene">Scène 2</p>
             </li>
 
-            <li class="prog-item">
-                <h3 class="prog-title">Marie-Nicole Lemieux - 22h</h3>
-                <p class="prog-scene">Scène 1</p>
+            <li class="program-item">
+                <h3 class="program-item__title">Marie-Nicole Lemieux - 22h</h3>
+                <p class="program-item__scene">Scène 1</p>
             </li>
 
-            <li class="prog-item">
-                <h3 class="prog-title">Lea Nucci - 23h</h3>
-                <p class="prog-scene">Scène 1</p>
+            <li class="program-item">
+                <h3 class="program-item__title">Lea Nucci - 23h</h3>
+                <p class="program-item__scene">Scène 1</p>
             </li>
-
-            <div class="divider"></div>
-<hr> 
-            <li class="prog-item">
-                <h3 class="prog-title">Ouverture du Festival - 18h</h3>
-                <p class="prog-scene">Scène 2</p>
-            </li>
-
-             <li class="prog-item">
-                <h3 class="prog-title">Khatia Buniatishvili - 19h30</h3>
-                <p class="prog-scene">Scène 1</p>
-            </li>
-
-
-            <li class="prog-item">
-                <h3 class="prog-title"> Orchestre de Paris - 20h30</h3>
-                <p class="prog-scene">Scène 2</p>
-            </li>
-
-
-             <li class="prog-item">
-                <h3 class="prog-title">Joe Hisaishi - 21h30</h3>
-                <p class="prog-scene">Scène 2</p>
-            </li>
- 
-
-            <li class="prog-item">
-                <h3 class="prog-title">Philippe Jaroussky - 23h00</h3>
-                <p class="prog-scene">Scène 2</p>
-            </li>
-            
-<section> 
-   <a href="/assets/documents/Programmation.pdf" download class="button"> 
-        PROGRAMME EN PDF
-    </a>
-    </section>
         </ul>
 
-</main> <footer style="margin-top: 80px; background-color: #f0f0f0; padding: 20px;"> 
+        <div class="divider"></div>
+        <hr class="separator">
 
+        <ul class="program-list">
+            <li class="program-item">
+                <h3 class="program-item__title">Ouverture du Festival - 18h</h3>
+                <p class="program-item__scene">Scène 2</p>
+            </li>
 
+            <li class="program-item">
+                <h3 class="program-item__title">Khatia Buniatishvili - 19h30</h3>
+                <p class="program-item__scene">Scène 1</p>
+            </li>
 
-<footer>
+            <li class="program-item">
+                <h3 class="program-item__title">Orchestre de Paris - 20h30</h3>
+                <p class="program-item__scene">Scène 2</p>
+            </li>
 
-    <section>
-        <a href="/Menu.html">Menu</a> <br>
-        <a href="/Glossaire">Glossaire</a> <br>
-        <a href="/Autre projet">Autre projets</a> <br>
-         <a href="/Contact.html">Nous contacter</a> <br>
-    </section>
-    </section>
-<br>
-    <section>
-         <h3> Mention légal</h3> 
-          <p>
-        Projet réalisé en 2025 dans le cadre d’un exercice pédagogique au departement MMI de Montbéliard 
-    </p>
+            <li class="program-item">
+                <h3 class="program-item__title">Joe Hisaishi - 21h30</h3>
+                <p class="program-item__scene">Scène 2</p>
+            </li>
 
+            <li class="program-item">
+                <h3 class="program-item__title">Philippe Jaroussky - 23h00</h3>
+                <p class="program-item__scene">Scène 2</p>
+            </li>
+        </ul>
 
+        <div class="program-download"> 
+            <a href="/assets/documents/Programmation.pdf" download class="button button--download"> 
+                PROGRAMME EN PDF
+            </a>
+        </div>
 
+    </main>
 
+    <footer class="footer" style="margin-top: 80px; background-color: #f0f0f0; padding: 20px;">
+        
+        <section class="footer__section footer__section--nav">
+            <nav aria-label="Liens utiles">
+                <a class="footer__link" href="/Menu.html">Menu</a> <br>
+                <a class="footer__link" href="/Glossaire">Glossaire</a> <br>
+                <a class="footer__link" href="/Autre projet">Autres projets</a> <br>
+                <a class="footer__link" href="/Contact.html">Nous contacter</a>
+            </nav>
+        </section>
 
+        <section class="footer__section footer__section--info">
+            <h3 class="footer__title">Mention légale</h3>
+            <p class="footer__text">
+                Projet réalisé en 2025 dans le cadre d’un exercice pédagogique au département MMI de Montbéliard 
+            </p>
 
-        <h3>Contact</h3>
-        <p>
-        Loddo Enzo <br>
-        Groupe B1 <br>
-        enzo.loddo@edu.univ-fcomte.fr <br>
-    </p>
-    </section>
+            <h3 class="footer__title">Contact</h3>
+            <p class="footer__text">
+                Loddo Enzo <br>
+                Groupe B1 <br>
+                enzo.loddo@edu.univ-fcomte.fr
+            </p>
+        </section>
 
-    <section>
-        <h3> Nous suivre</h3>
+        <section class="footer__section footer__section--socials">
+            <h3 class="footer__title">Nous suivre</h3>
+            <img class="footer__icon" src="/assets/image/instagram.webp" alt="Instagram" />
+            <img class="footer__icon" src="/assets/image/facebook.webp" alt="Facebook" />
+            <img class="footer__icon" src="/assets/image/youtube.webp" alt="YouTube" />
+            <img class="footer__icon" src="/assets/image/twitter.webp" alt="Twitter" />
+        </section>
 
-             <img src="/assets/image/instagram.webp" alt="" />
-             <img src="/assets/image/facebook.webp" alt="" />
-              <img src="/assets/image/youtube.webp" alt="" />
-               <img src="/assets/image/twitter.webp" alt="" />
+    </footer>
 
-    </section>
-</footer>
-    </body>
+</body>
 </html>
-      
-
