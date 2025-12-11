@@ -9,11 +9,30 @@
 </head>
 <body>
     <header class="header">
-        <div class="header__logo"><a href="index.html"><img src="assets/Vectoriel/logo.webp" alt="Logo"></a></div>
-        <button class="menu-button" aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
+        <div class="header__logo">
+            <a href="index.html">
+                <img src="assets/Vectoriel/logo.webp" alt="Logo">
+            </a>
+        </div>
+        
+        <button class="menu-button" aria-label="Ouvrir le menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
         <nav class="menu" hidden>
-            </nav>
-    </header>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="le-festival.html">Le festival</a></li>
+                <li><a href="programmation.html">La programmation</a></li>
+                <li><a href="artiste.html">Artistes</a></li>
+                <li><a href="scenes.html">Scènes</a></li>
+                <li><a href="info-pratique.html">Infos pratiques</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        </header>
 
     <main class="main-content programmation-page">
         <h1 class="page-title">LA PROGRAMMATION</h1>
@@ -77,8 +96,7 @@
         </div>
     </main>
 
- <footer class="footer">
-        
+    <footer class="footer">
         <div class="footer-top">
             <nav class="footer-nav">
                 <a href="#">Menu</a>

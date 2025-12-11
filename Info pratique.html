@@ -3,14 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Infos Pratique</title>
+    <title>Infos Pratiques</title>
     <link rel="stylesheet" href="src/css/style.css">
     <script src="src/js/script.js" defer></script>
 </head>
 <body>
+
     <header class="header">
-        <div class="header__logo"><a href="index.html"><img src="assets/Vectoriel/logo.webp" alt="Logo"></a></div>
-        <button class="menu-button"><span></span><span></span><span></span></button>
+        <div class="header__logo">
+            <a href="index.html">
+                <img src="assets/Vectoriel/logo.webp" alt="Logo">
+            </a>
+        </div>
+        
+        <button class="menu-button" aria-label="Menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="menu" hidden>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="le-festival.html">Le festival</a></li>
+                <li><a href="programmation.html">La programmation</a></li>
+                <li><a href="artiste.html">Artistes</a></li>
+                <li><a href="scenes.html">Scènes</a></li>
+                <li><a href="info-pratique.html">Infos pratiques</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main class="main-content">
@@ -21,7 +43,7 @@
             <div class="ticket-card">
                 <div class="ticket-info">
                     <h3>Pass 1 jour</h3>
-                    <p>Valable 1 jour: vendredi ou samedi</p>
+                    <p>Valable 1 jour : vendredi ou samedi</p>
                 </div>
                 <div class="ticket-action">
                     <span class="price">35€</span>
@@ -31,8 +53,8 @@
 
             <div class="ticket-card">
                 <div class="ticket-info">
-                    <h3>Pass 2 jour</h3>
-                    <p>Valable 1 jour: vendredi et samedi</p>
+                    <h3>Pass 2 jours</h3>
+                    <p>Valable 2 jours : vendredi et samedi</p>
                 </div>
                 <div class="ticket-action">
                     <span class="price">45€</span>
@@ -42,7 +64,8 @@
 
             <div class="ticket-card">
                 <div class="ticket-info">
-                    <h3>Pass prémium 1 jours</h3>
+                    <h3>Pass prémium 1 jour</h3>
+                    <p>Valable 1 jour : vendredi ou samedi</p>
                 </div>
                 <div class="ticket-action">
                     <span class="price">55€</span>
@@ -53,7 +76,7 @@
             <div class="ticket-card">
                 <div class="ticket-info">
                     <h3>Pass prémium 2 jours</h3>
-                    <p>Valable 2 jour: vendredi et samedi</p>
+                    <p>Valable 2 jours : vendredi et samedi</p>
                 </div>
                 <div class="ticket-action">
                     <span class="price">70€</span>
@@ -63,9 +86,8 @@
         </div>
     </main>
 
-</body>
-</html>
-     
+    <footer class="footer">
+        
         <div class="footer-top">
             <nav class="footer-nav">
                 <a href="#">Menu</a>
@@ -95,7 +117,7 @@
             <div class="social-icons">
                 <img src="assets/Image/instagram.webp" alt="Instagram">
                 <img src="assets/Image/facebook.webp" alt="Facebook">
-                <img src="assets/image/youtube.webp" alt="Youtube">
+                <img src="assets/Image/youtube.webp" alt="Youtube">
                 <img src="assets/Image/twitter.webp" alt="Twitter">
             </div>
         </div>

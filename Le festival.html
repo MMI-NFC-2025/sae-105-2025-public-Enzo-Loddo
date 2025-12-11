@@ -4,14 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Le Festival</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/css/style.css">
     <script src="src/js/script.js" defer></script>
 </head>
 <body>
     <header class="header">
-        <div class="header__logo"><a href="index.html"><img src="assets/Vectoriel/logo.webp" alt="Logo"></a></div>
-        <button class="menu-button"><span></span><span></span><span></span></button>
-    </header>
+        <div class="header__logo">
+            <a href="index.html">
+                <img src="assets/Vectoriel/logo.webp" alt="Logo">
+            </a>
+        </div>
+        
+        <button class="menu-button" aria-label="Menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="menu" hidden>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="le-festival.html">Le festival</a></li>
+                <li><a href="programmation.html">La programmation</a></li>
+                <li><a href="artiste.html">Artistes</a></li>
+                <li><a href="scenes.html">Scènes</a></li>
+                <li><a href="info-pratique.html">Infos pratiques</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        </header>
 
     <main class="main-content">
         <div class="full-width-image">
@@ -46,7 +70,7 @@
         </section>
     </main>
 
-<footer class="footer">
+    <footer class="footer">
         
         <div class="footer-top">
             <nav class="footer-nav">
@@ -75,10 +99,10 @@
         <div class="footer-section">
             <h3>NOUS SUIVRE</h3>
             <div class="social-icons">
-                <img src="assets/image/instagram.webp" alt="Instagram">
-                <img src="assets/image/facebook.webp" alt="Facebook">
-                <img src="assets/image/youtube.webp" alt="Youtube">
-                <img src="assets/image/twitter.webp" alt="Twitter">
+                <img src="assets/Image/instagram.webp" alt="Instagram">
+                <img src="assets/Image/facebook.webp" alt="Facebook">
+                <img src="assets/Image/youtube.webp" alt="Youtube">
+                <img src="assets/Image/twitter.webp" alt="Twitter">
             </div>
         </div>
     </footer>
