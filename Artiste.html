@@ -1,97 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Festicloze</title>
+    <title>Festicloze - Artiste</title>
     <link rel="stylesheet" type="text/css" href="src/css/style.css" />
     <script src="src/js/script.js" defer></script>
 </head>
 
 <body>
+
     <header class="header">
 
-        <button class="headermenu-button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mainNav">
-            <span class="menu-buttonbar" aria-hidden="true"></span>
-            <span class="menu-buttonbar" aria-hidden="true"></span>
-            <span class="menu-buttonbar" aria-hidden="true"></span>
+        <button class="header__toggle" aria-label="Ouvrir le menu principal" aria-expanded="false" aria-controls="mainNav">
+            <span class="header__bar" aria-hidden="true"></span>
+            <span class="header__bar" aria-hidden="true"></span>
+            <span class="header__bar" aria-hidden="true"></span>
         </button>
 
-        <nav class="headermenu menu" id="mainNav" hidden>
-            <ul class="menulist">
-                <li class="menuitem">
-                    <a class="menulink" href="/">Accueil</a>
+        <nav class="header__nav" id="mainNav" hidden>
+            <ul class="header__list">
+                <li class="header__item">
+                    <a class="header__link" href="/">Accueil</a>
                 </li>
-                   <li>
-                <a href="/Le festival.html">Le festival</a>
-            </li>
-            <li>
-                <a href="/La programmation.html">La programmation</a>
-            </li>
-            <li>
-                <a href="/Artiste.html">Artiste</a>
-            </li>
-            <li>
-                <a href="/Scénes.html">Scéne</a>
-            </li>
-            <li>
-                <a href="/Info pratique.html">Info pratiques</a>
-            </li>
-            <li>
-                <a href="/Contact.html">Contact</a>
-            </li>
+                <li class="header__item">
+                    <a class="header__link" href="/Le festival.html">Le festival</a>
+                </li>
+                <li class="header__item">
+                    <a class="header__link" href="/La programmation.html">La programmation</a>
+                </li>
+                <li class="header__item">
+                    <a class="header__link" href="/Artiste.html">Artistes</a>
+                </li>
+                <li class="header__item">
+                    <a class="header__link" href="/Scénes.html">Scènes</a>
+                </li>
+                <li class="header__item">
+                    <a class="header__link" href="/Info pratique.html">Infos pratiques</a>
+                </li>
+                <li class="header__item">
+                    <a class="header__link" href="/Contact.html">Contact</a>
+                </li>
             </ul>
         </nav>
     </header>
 
+    <main class="main-content">
+        <section class="artist-profile">
+            <h1 class="artist-profile__title">Artiste</h1>
+            
+            <h2 class="artist-profile__name">Marc Lavoine</h2> 
+            <p class="artist-profile__role">Chanteur et parolier français</p>
+        
+            <img class="artist-profile__image" src="/assets/image/Image Artiste.webp" alt="Portrait en noir et blanc de Marc Lavoine" />
 
-<h1>Artiste</h1>
-                <h2 class="subtitle"> Marc Lavoine  </h2> 
-                <p>Chanteur et parolier français
-</p>
-           
-           <img src="/assets/image/Image Artiste.webp" />
-
- 
-                
-                <p>Marc Lavoine est un chanteur et acteur français né en 1962, devenu une figure importante de la variété francophone grâce à sa voix grave et son univers romantique. </p>
-                <p> Il se fait connaître au milieu des années 1980 avec des titres comme « Pour une biguine avec toi » et « Elle a les yeux revolver », </p>
-                <p> qui lancent une carrière marquée par de nombreux albums à succès. </p>
-               
-            </section>
+            <div class="artist-profile__bio">
+                <p>Marc Lavoine est un chanteur et acteur français né en 1962, devenu une figure importante de la variété francophone grâce à sa voix grave et son univers romantique.</p>
+                <p>Il se fait connaître au milieu des années 1980 avec des titres comme « Pour une biguine avec toi » et « Elle a les yeux revolver »,</p>
+                <p>qui lancent une carrière marquée par de nombreux albums à succès.</p>
+            </div>
+        </section>
     </main>
 
-    <footer>
+    <footer class="footer" style="margin-top: 80px; background-color: #f0f0f0; padding: 20px;">
 
-    <section>
-        <a href="/Menu.html">Menu</a> <br>
-        <a href="/Glossaire">Glossaire</a> <br>
-        <a href="/Autre projet">Autre projets</a> <br>
-         <a href="/Contact.html">Nous contacter</a> <br>
-    </section>
-    </section>
-</main> <footer style="margin-top: 80px; background-color: #f0f0f0; padding: 20px;"> 
-    <section>
-         <h3> Mention légal</h3>
-          <p>
-        Projet réalisé en 2025 dans le cadre d’un exercice pédagogique au departement MMI de Montbéliard 
-    </p>
-        <h3>Contact</h3>
-        <p>
-        Loddo Enzo <br>
-        Groupe B1 <br>
-        enzo.loddo@edu.univ-fcomte.fr <br>
-    </p>
-    </section>
+        <section class="footer__section footer__section--nav">
+            <nav aria-label="Navigation secondaire">
+                <a class="footer__link" href="/Menu.html">Menu</a> <br>
+                <a class="footer__link" href="/Glossaire">Glossaire</a> <br>
+                <a class="footer__link" href="/Autre projet">Autres projets</a> <br>
+                <a class="footer__link" href="/Contact.html">Nous contacter</a>
+            </nav>
+        </section>
 
-    <section>
-        <h3> Nous suivre</h3>
-        <img src="/assets/image/instagram.webp" alt="" />
-             <img src="/assets/image/facebook.webp" alt="" />
-              <img src="/assets/image/youtube.webp" alt="" />
-               <img src="/assets/image/twitter.webp" alt="" />
+        <section class="footer__section footer__section--info">
+            <h3 class="footer__title">Mention légale</h3>
+            <p class="footer__text">
+                Projet réalisé en 2025 dans le cadre d’un exercice pédagogique au département MMI de Montbéliard 
+            </p>
+            
+            <h3 class="footer__title">Contact</h3>
+            <p class="footer__text">
+                Loddo Enzo <br>
+                Groupe B1 <br>
+                enzo.loddo@edu.univ-fcomte.fr
+            </p>
+        </section>
 
-    </section>
-</footer>
-    </body>
+        <section class="footer__section footer__section--socials">
+            <h3 class="footer__title">Nous suivre</h3>
+            <img class="footer__icon" src="/assets/image/instagram.webp" alt="Instagram" />
+            <img class="footer__icon" src="/assets/image/facebook.webp" alt="Facebook" />
+            <img class="footer__icon" src="/assets/image/youtube.webp" alt="YouTube" />
+            <img class="footer__icon" src="/assets/image/twitter.webp" alt="Twitter" />
+        </section>
+        
+    </footer>
+
+</body>
 </html>
-
-
