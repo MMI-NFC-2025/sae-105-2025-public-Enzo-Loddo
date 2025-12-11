@@ -3,11 +3,11 @@
 
 À compléter :
 
-- NOM :
-- PRÉNOM :
-- GROUPE :
+- NOM : Loddo
+- PRÉNOM : Enzo
+- GROUPE : B1
 - URL du site :
-- URL FIGMA :
+- URL FIGMA : https://www.figma.com/design/d6gQVk2t1EB9chKsAq2qkJ/Untitled?node-id=120-226&t=oqao9JMoX6MJRUid-1
 
 ## Sujet
 
