@@ -1,16 +1,16 @@
-footer {
-  padding: var(--space-xl) var(--space-lg);
-  background-color: var(--color-bg-body);
-  margin-top: var(--space-xxl);
-  font-size: 0.9rem;
+.footer {
+  background-color: var(--color-bg);
+  padding: var(--space-lg) var(--space-md);
+  margin-top: var(--space-xl);
   border-top: 1px solid #222;
+  font-size: 0.9rem;
 }
 
-/* Grille Responsive */
+/* Grille Responsive (1 colonne mobile, 4 colonnes desktop) */
 .footer-grid {
   display: grid;
+  grid-template-columns: 1fr;
   gap: var(--space-lg);
-  grid-template-columns: 1fr; 
 }
 
 @media (min-width: 768px) {
@@ -20,31 +20,36 @@ footer {
   }
 }
 
+/* Navigation verticale (Liens les uns sous les autres) */
 .footer-nav {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  flex-direction: column; /* C'est cette ligne qui met les liens en colonne */
+  gap: 15px; /* Espace entre chaque lien */
   font-family: var(--font-serif);
   font-size: 1.1rem;
 }
 
+/* Titres de section */
 .footer-section h3 {
   font-family: var(--font-sans);
   font-weight: 700;
   text-transform: uppercase;
   font-size: 0.8rem;
-  margin-bottom: 1rem;
-  color: var(--color-text-main);
+  letter-spacing: 1px;
+  margin-bottom: var(--space-sm);
+  color: var(--color-text);
 }
 
 .footer-section p {
   color: var(--color-text-muted);
+  line-height: 1.4;
   margin: 0;
 }
 
+/* Réseaux sociaux */
 .social-icons {
   display: flex;
-  gap: 1rem;
+  gap: 15px;
 }
 .social-icons img {
   width: 24px;

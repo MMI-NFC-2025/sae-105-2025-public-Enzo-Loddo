@@ -1,35 +1,48 @@
-/* --- Compteurs Accueil --- */
+/* --- COMPTEURS (Page Accueil) --- */
 .stats-container {
-    display: flex;
-    justify-content: center;
-    gap: var(--space-lg);
-    margin-top: var(--space-lg);
+  display: flex;
+  justify-content: center;
+  gap: var(--space-lg);
+  margin-top: var(--space-lg);
 }
 .stat-box {
-    width: 60px; height: 60px;
-    background: rgba(255,255,255,0.1);
-    display: flex; justify-content: center; align-items: center;
-    font-family: var(--font-serif); font-size: 2rem;
-    border-radius: 4px; margin-bottom: 5px;
+  width: 60px; height: 60px;
+  border: 1px solid rgba(255,255,255,0.3); /* Encadrement fin */
+  background: rgba(255,255,255,0.05);
+  display: flex; justify-content: center; align-items: center;
+  font-family: var(--font-serif); font-size: 1.8rem;
+  margin-bottom: 5px;
 }
 .stat-item { text-align: center; }
 .stat-label { font-size: 0.7rem; letter-spacing: 2px; color: var(--color-text-muted); }
 
-/* --- Cartes Scènes --- */
-.scene-card { margin-bottom: var(--space-xl); }
-.separator { border: 0; border-top: 1px solid #333; margin: var(--space-xl) 0; }
 
-/* --- Cartes Blanches (Infos Pratiques) --- */
+/* --- INFOS PRATIQUES (Cartes Blanches - IMPORTANT) [cite: 135-151] --- */
 .ticket-card {
-    background-color: var(--color-bg-white);
-    color: var(--color-text-dark);
-    border-radius: var(--radius-sm);
-    padding: var(--space-md);
-    margin-bottom: var(--space-md);
-    display: flex;
+  background-color: var(--color-bg-card-light); /* Fond BLANC */
+  color: var(--color-text-dark);                /* Texte NOIR */
+  border-radius: var(--radius-sm);
+  padding: 25px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column; /* Mobile first */
+  gap: 15px;
+}
+
+@media (min-width: 500px) {
+  .ticket-card {
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
+  }
 }
-.ticket-info h3 { color: #000; font-weight: 700; font-size: 1.1rem; margin: 0; }
-.ticket-info p { color: #555; font-size: 0.9rem; margin: 5px 0 0 0; }
-.price { font-size: 1.8rem; font-family: var(--font-serif); margin-right: 15px; }
+
+.ticket-info h3 { color: #000; font-weight: 700; font-size: 1.1rem; margin-bottom: 5px; }
+.ticket-info p { color: #555; font-size: 0.9rem; margin: 0; }
+.ticket-action { display: flex; align-items: center; gap: 15px; }
+.price { font-size: 2rem; font-family: var(--font-serif); }
+
+
+/* --- SCÈNES --- */
+.scene-card { margin-bottom: var(--space-lg); }
+.separator { border: 0; border-top: 1px solid #333; margin: var(--space-xl) 0; }

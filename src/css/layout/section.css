@@ -1,9 +1,22 @@
-.prog-list { margin: var(--space-lg) 0; }
-.prog-item { 
-    margin-bottom: var(--space-md); 
-    border-bottom: 1px solid #222; 
-    padding-bottom: 10px; 
+.main-content {
+  padding-top: 100px; /* Espace pour le header */
+  padding-left: var(--space-md);
+  padding-right: var(--space-md);
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 80vh;
 }
-.prog-item h3 { font-size: 1.1rem; margin-bottom: 5px; }
-.prog-item p { color: var(--color-text-muted); font-size: 0.9rem; }
-.divider-line { height: 1px; background: #333; margin: 40px 0; }
+
+/* Blocs de texte justifiés ou centrés */
+.content-block {
+  margin-bottom: var(--space-lg);
+  text-align: justify;
+}
+
+/* Centrage du texte CTA en fin de page */
+.cta-text {
+  text-align: center;
+  margin-top: var(--space-lg);
+  font-size: 1.5rem;
+  line-height: 1.3;
+}

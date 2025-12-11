@@ -1,23 +1,20 @@
-/* Point d'entrée principal */
-
-/* 1. Vendors */
+/* 1. Vendors (Librairies tierces) */
 @import "vendors/normalize.css";
 
-/* 2. Utils */
+/* 2. Utils (Variables) */
 @import "utils/variables.css";
 
-/* 3. Base */
+/* 3. Base (Styles globaux) */
 @import "base/main.css";
 @import "base/media.css";
 
-/* 4. Layout */
+/* 4. Layout (Structure de page) */
 @import "layout/header.css";
 @import "layout/footer.css";
 @import "layout/section.css";
 
-/* 5. Components */
-@import "components/button.css";
-@import "components/card.css";   /* Pour les scènes et artistes */
-@import "components/form.css";   /* Pour la page contact */
-@import "components/input.css";  /* Pour les champs de contact */
+/* 5. Components (Éléments réutilisables) */
 @import "components/menu.css";
+@import "components/button.css";
+@import "components/card.css";   /* Gère les scènes, stats et billets */
+@import "components/form.css";   /* Gère la page contact */

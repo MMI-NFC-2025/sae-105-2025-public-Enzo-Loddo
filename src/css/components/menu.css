@@ -3,11 +3,11 @@
   border: none;
   cursor: pointer;
   width: 30px;
-  height: 20px;
-  position: relative;
+  height: 22px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 0;
 }
 
 .menu-button span {
@@ -19,7 +19,13 @@
   transition: 0.3s;
 }
 
-/* Ajout pour l'ouverture du menu (géré par JS normalement) */
-.menu-open .menu-button span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
-.menu-open .menu-button span:nth-child(2) { opacity: 0; }
-.menu-open .menu-button span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+/* Style du menu déroulant (quand il est visible) */
+.menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: var(--color-bg);
+  padding: 20px;
+  /* Ajoutez ici vos styles d'animation si nécessaire */
+}

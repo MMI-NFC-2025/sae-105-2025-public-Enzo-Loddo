@@ -1,51 +1,71 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Festicloze</title>
-    <link rel="stylesheet" type="text/css" href="src/css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infos Pratique</title>
+    <link rel="stylesheet" href="src/css/style.css">
     <script src="src/js/script.js" defer></script>
 </head>
-
 <body>
     <header class="header">
-
-        <button class="headermenu-button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mainNav">
-            <span class="menu-buttonbar" aria-hidden="true"></span>
-            <span class="menu-buttonbar" aria-hidden="true"></span>
-            <span class="menu-buttonbar" aria-hidden="true"></span>
-        </button>
-
-        <nav class="headermenu menu" id="mainNav" hidden>
-            <ul class="menulist">
-                <li class="menuitem">
-                    <a class="menulink" href="/1.index.html">Accueil</a>
-                </li>
-                <li class="menuitem">
-                    <a class="menulink" href="/2.Le festival.html">PRÉSENTAION</a>
-                </li>
-                <li class="menuitem">
-                    <a class="menulink" href="/3.La programmation.html">PROGRAMMATION</a>
-                </li>
-                <li class="menuitem">
-                    <a class="menulink" href="/4.Artiste.html">LISTE DES GROUPES</a>
-                </li>
-                <li class="menuitem">
-                    <a class="menulink" href="/7.Scénes.html">LA SCENE</a>
-                </li>
-                <li class="menuitem">
-                    <a class="menulink" href="/8.infos pratiques.html">INFOS PRATIQUES</a>
-                </li>
-                <li class="menuitem">
-                    <a class="menulink" href="/9.contact.html">CONTACT</a>
-                </li>
-            </ul>
-        </nav>
+        <div class="header__logo"><a href="index.html"><img src="assets/image/logo.png" alt="Logo"></a></div>
+        <button class="menu-button"><span></span><span></span><span></span></button>
     </header>
 
-<body>
+    <main class="main-content">
+        <h1 class="page-title">Infos Pratique</h1>
+        <p class="section-subtitle">Tarifs et billets</p>
+
+        <div class="tickets-container">
+            <div class="ticket-card">
+                <div class="ticket-info">
+                    <h3>Pass 1 jour</h3>
+                    <p>Valable 1 jour: vendredi ou samedi</p>
+                </div>
+                <div class="ticket-action">
+                    <span class="price">35€</span>
+                    <button class="btn-buy">Acheter</button>
+                </div>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-info">
+                    <h3>Pass 2 jour</h3>
+                    <p>Valable 1 jour: vendredi et samedi</p>
+                </div>
+                <div class="ticket-action">
+                    <span class="price">45€</span>
+                    <button class="btn-buy">Acheter</button>
+                </div>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-info">
+                    <h3>Pass prémium 1 jours</h3>
+                </div>
+                <div class="ticket-action">
+                    <span class="price">55€</span>
+                    <button class="btn-buy">Acheter</button>
+                </div>
+            </div>
+
+            <div class="ticket-card">
+                <div class="ticket-info">
+                    <h3>Pass prémium 2 jours</h3>
+                    <p>Valable 2 jour: vendredi et samedi</p>
+                </div>
+                <div class="ticket-action">
+                    <span class="price">70€</span>
+                    <button class="btn-buy">Acheter</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">...</footer>
+</body>
+</html>
 
 
 

@@ -1,65 +1,42 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Festicloze</title>
-    <link rel="stylesheet" type="text/css" href="src/css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chorus Symphonia - Accueil</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/style.css">
     <script src="src/js/script.js" defer></script>
 </head>
-
 <body>
+
     <header class="header">
-
-        <button class="headermenu-button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mainNav">
-            <span class="menu-buttonbar" aria-hidden="true"></span>
-            <span class="menu-buttonbar" aria-hidden="true"></span>
-            <span class="menu-buttonbar" aria-hidden="true"></span>
+        <div class="header__logo">
+             <a href="index.html"><img src="assets/image/logo.png" alt="Logo"></a>
+        </div>
+        <button class="menu-button" aria-label="Menu">
+            <span></span><span></span><span></span>
         </button>
-
-        <nav class="headermenu menu" id="mainNav" hidden>
-            <ul class="menulist">
-                <li class="menuitem">
-                    <a class="menulink" href="/1.index.html">Accueil</a>
-                </li>
-                <li class="menuitem">
-                    <a class="menulink" href="/2.Le festival.html">PRÉSENTAION</a>
-                </li>
-                <li class="menuitem">
-                    <a class="menulink" href="/3.La programmation.html">PROGRAMMATION</a>
-                </li>
-                <li class="menuitem">
-                    <a class="menulink" href="/4.Artiste.html">LISTE DES GROUPES</a>
-                </li>
-                <li class="menuitem">
-                    <a class="menulink" href="/7.Scénes.html">LA SCENE</a>
-                </li>
-                <li class="menuitem">
-                    <a class="menulink" href="/8.infos pratiques.html">INFOS PRATIQUES</a>
-                </li>
-                <li class="menuitem">
-                    <a class="menulink" href="/9.contact.html">CONTACT</a>
-                </li>
-            </ul>
-        </nav>
+        <nav class="menu" hidden>
+            </nav>
     </header>
 
     <main class="main-content">
-        
         <section class="hero">
             <div class="hero__header-text">
                 <p class="hero__date">Du 28 au 31 août 2025</p>
-                <h1 class="hero__title">Chorus Symphonia</h1>
+                <h1>Chorus Symphonia</h1>
                 <p class="hero__subtitle">"Chorus Symphonia, fais résonner la Franche-Comté."</p>
             </div>
 
             <div class="hero__visual">
-                <img src="assets/image/hero.webp" alt="Danseuses classiques en tutu blanc" class="grayscale-img">
+                <img src="assets/image/danseuses.jpg" alt="Danseuses classiques" class="hero__image grayscale-img">
             </div>
 
-            <div class="hero__intro">
-                <p>Le rendez-vous incontournable de la scène musicale au cœur de la ville de Besançon dans sa citadelle</p>
+            <div class="hero__intro" style="text-align: center; margin: 40px auto; max-width: 600px;">
+                <p>Le rendez-vous incontournable de la filière musicale au cœur de la ville de Besançon dans sa citadelle</p>
             </div>
 
             <div class="stats-container">
@@ -67,22 +44,19 @@
                     <div class="stat-box">4</div>
                     <span class="stat-label">JOURS</span>
                 </div>
-                
                 <div class="stat-item">
                     <div class="stat-box">8</div>
                     <span class="stat-label">ARTISTES</span>
                 </div>
-                
                 <div class="stat-item">
                     <div class="stat-box">2</div>
                     <span class="stat-label">SCÈNES</span>
                 </div>
             </div>
         </section>
-
     </main>
 
- <footer class="footer">
+<footer class="footer">
         
         <div class="footer-top">
             <nav class="footer-nav">

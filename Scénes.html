@@ -1,101 +1,46 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Festicloze</title>
-    <link rel="stylesheet" type="text/css" href="src/css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scènes</title>
+    <link rel="stylesheet" href="src/css/style.css">
     <script src="src/js/script.js" defer></script>
 </head>
-
 <body>
     <header class="header">
-
-        <button class="headermenu-button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mainNav">
-            <span class="menu-buttonbar" aria-hidden="true"></span>
-            <span class="menu-buttonbar" aria-hidden="true"></span>
-            <span class="menu-buttonbar" aria-hidden="true"></span>
-        </button>
-
-        <nav class="headermenu menu" id="mainNav" hidden>
-            <ul class="menulist">
-                <li class="menuitem">
-                    <a class="menulink" href="/1.index.html">Accueil</a>
-                </li>
-                <li class="menuitem">
-                    <a class="menulink" href="/2.Le festival.html">PRÉSENTAION</a>
-                </li>
-                <li class="menuitem">
-                    <a class="menulink" href="/3.La programmation.html">PROGRAMMATION</a>
-                </li>
-                <li class="menuitem">
-                    <a class="menulink" href="/4.Artiste.html">LISTE DES GROUPES</a>
-                </li>
-                <li class="menuitem">
-                    <a class="menulink" href="/7.Scénes.html">LA SCENE</a>
-                </li>
-                <li class="menuitem">
-                    <a class="menulink" href="/8.infos pratiques.html">INFOS PRATIQUES</a>
-                </li>
-                <li class="menuitem">
-                    <a class="menulink" href="/9.contact.html">CONTACT</a>
-                </li>
-            </ul>
-        </nav>
+        <div class="header__logo"><a href="index.html"><img src="assets/image/logo.png" alt="Logo"></a></div>
+        <button class="menu-button"><span></span><span></span><span></span></button>
     </header>
-<body>
-
-    <header>
-        <div class="logo">
-            <img src="assets/logo.png" alt="Logo">
-        </div>
-        <button class="menu-button">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-    </header>
-
-<body>
-
-    
 
     <main class="main-content">
-        <section class="scenes">
-            <h1 class="scenes__title">Scènes</h1>
+        <h1 class="page-title">Scenes</h1>
 
-            <article class="scene">
-                <h2 class="scene__name">Scène 1</h2>
-                <p class="scene__location">Court extérieur</p>
-                
-                <img class="scene__image" src="/assets/image/Scéne 1.webp" alt="Vue de la scène 1 installée dans la cour extérieure" />
+        <article class="scene-card">
+            <h2 class="scene-title">Scène 1</h2>
+            <p class="scene-location">Court extérieur</p>
+            <img src="assets/image/Scéne 1.webp" alt="Cour extérieure">
+            <div class="scene-desc">
+                <p>Au cœur de la cour extérieure, la musique résonne entre les pierres chargées d'histoire.</p>
+                <p>Cet espace ouvert, baigné de lumière, accueille les festivaliers dans une ambiance chaleureuse où artistes et public se retrouvent au plus près les uns des autres.</p>
+                <p>Une scène conviviale, idéale pour découvrir de nouveaux talents et profiter pleinement de l'atmosphère unique de la Citadelle.</p>
+            </div>
+        </article>
 
-                <div class="scene__description">
-                    <p>Au cœur de la cour extérieure, la musique résonne entre les pierres chargées d’histoire.</p>
-                    <p>Cet espace ouvert, baigné de lumière, accueille les festivaliers dans une ambiance chaleureuse où artistes et public se retrouvent au plus près les uns des autres.</p>
-                    <p>Une scène conviviale, idéale pour découvrir de nouveaux talents et profiter pleinement de l’atmosphère unique de la Citadelle.</p>
-                </div>
-            </article>
+        <hr class="separator">
 
-            <hr class="separator">
-
-            <article class="scene">
-                <h2 class="scene__name">Scène 2</h2>
-                <p class="scene__location">Muraille</p>
-                
-                <img class="scene__image" src="/assets/image/Scéne 2.webp" alt="Vue de la scène 2 située contre la muraille" />
-
-                <div class="scene__description">
-                    <p>Installée à l’ombre majestueuse de la muraille, cette scène offre un cadre saisissant où le patrimoine rencontre la modernité musicale.</p>
-                    <p>Les concerts prennent une dimension intime et immersive, portés par l’écho naturel des fortifications.</p>
-                    <p>Une expérience hors du temps, où chaque note semble vibrer avec l’histoire de Besançon.</p>
-                </div>
-            </article>
-        </section>
+        <article class="scene-card">
+            <h2 class="scene-title">Scène 2</h2>
+            <p class="scene-location">Muraille</p>
+            <img src="assets/image/Scéne 2.webp" alt="Muraille">
+            <div class="scene-desc">
+                <p>Installée à l'ombre majestueuse de la muraille, cette scène offre un cadre saisissant où le patrimoine rencontre la modernité musicale.</p>
+                <p>Les concerts prennent une dimension intime et immersive, portés par l'écho naturel des fortifications.</p>
+                <p>Une expérience hors du temps, où chaque note semble vibrer avec l'histoire de Besançon.</p>
+            </div>
+        </article>
     </main>
-
- <footer class="footer">
+<footer class="footer">
         
         <div class="footer-top">
             <nav class="footer-nav">

@@ -2,16 +2,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: var(--space-md) var(--space-lg);
-  position: absolute;
+  padding: var(--space-md);
+  position: absolute; /* Superposé au contenu */
   width: 100%;
   top: 0;
   z-index: 100;
 }
 
-/* Le logo blanc */
 .header__logo img {
   height: 40px;
   width: auto;
-  filter: invert(1);
+  filter: invert(1); /* Rend le logo blanc */
 }
