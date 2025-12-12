@@ -19,7 +19,7 @@
 
 
 .ticket-card {
-  background-color: var(--color-bg-card-light); /
+  background-color: var(--color-bg-card-light); 
   color: var(--color-text-dark);                
   border-radius: var(--radius-sm);
   padding: 25px;
