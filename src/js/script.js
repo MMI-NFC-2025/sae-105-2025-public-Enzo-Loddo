@@ -1,26 +1,51 @@
-// src/js/script.js
-
-// On sélectionne les éléments du DOM
+// ===== 1. GESTION DU MENU HAMBURGER =====
 const toggle = document.querySelector(".menu-button");
 const nav = document.querySelector(".menu");
 const body = document.body;
 
-// On vérifie que les éléments existent avant d'ajouter l'événement
 if (toggle && nav) {
-  
   toggle.addEventListener("click", () => {
-    // Est-ce que le menu est actuellement ouvert ? (true/false)
     const isOpen = toggle.getAttribute("aria-expanded") === "true";
     const isClosed = !isOpen;
-
-    // 1. Mise à jour de l'attribut ARIA pour le bouton (accessibilité + style croix)
+    
+    // Mise à jour de l'attribut ARIA (accessibilité + style croix)
     toggle.setAttribute("aria-expanded", isClosed);
-
-    // 2. Affiche ou cache le menu
-    // Si isClosed est vrai (on veut ouvrir), hidden devient false (on affiche)
+    
+    // Affiche ou cache le menu
     nav.hidden = isOpen;
-
-    // 3. Bloque ou débloque le scroll de la page
+    
+    // Bloque ou débloque le scroll de la page
     body.classList.toggle("noscroll", isClosed);
   });
+}
+
+// ===== 2. GESTION DU CARROUSEL =====
+const carrousel = document.querySelector("#carrouselProgrammation");
+const btnGauche = document.querySelector(".bouton-carrousel--gauche");
+const btnDroite = document.querySelector(".bouton-carrousel--droite");
+
+if (carrousel && btnGauche && btnDroite) {
+    // Flèche DROITE
+    btnDroite.addEventListener("click", () => {
+        const carte = carrousel.querySelector(".carte");
+        if (carte) {
+            const scrollAmount = carte.offsetWidth + 20;
+            carrousel.scrollBy({
+                left: scrollAmount,
+                behavior: "smooth"
+            });
+        }
+    });
+
+    // Flèche GAUCHE
+    btnGauche.addEventListener("click", () => {
+        const carte = carrousel.querySelector(".carte");
+        if (carte) {
+            const scrollAmount = carte.offsetWidth + 20;
+            carrousel.scrollBy({
+                left: -scrollAmount,
+                behavior: "smooth"
+            });
+        }
+    });
 }
