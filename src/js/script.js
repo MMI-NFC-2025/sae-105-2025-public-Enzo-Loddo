@@ -18,6 +18,20 @@ if (toggle && nav) {
     body.classList.toggle("noscroll", isClosed);
   });
 }
+/* Menu présent sur toutes les pages :
+- index.html
+- Le festival.html
+- La programmation.html
+- Artiste.html
+- scénes.html
+- Info pratique.html
+- Contact.html
+- 404.html
+- Artiste2.html
+*/  
+
+
+
 
 // ===== 2. GESTION DU CARROUSEL =====
 const carrousel = document.querySelector("#carrouselProgrammation");
@@ -49,6 +63,9 @@ if (carrousel && btnGauche && btnDroite) {
         }
     });
 }
+/* Menu présent sur les pages :
+- index.html
+*/
 
 
 
@@ -74,3 +91,14 @@ const btnHaut = document.getElementById('btn-retour-haut');
       });
     });
   }
+  /* Menu présent sur toutes les pages :
+- index.html
+- Le festival.html
+- La programmation.html
+- Artiste.html
+- scénes.html
+- Info pratique.html
+- Contact.html
+- 404.html
+- Artiste2.html
+*/ 
