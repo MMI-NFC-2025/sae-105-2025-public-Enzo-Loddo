@@ -4,7 +4,7 @@ button {
   font-family: inherit;
 }
 
-/* Bouton "Acheter" (Noir sur cartes blanches) */
+
 .btn-buy {
   background-color: #000000;
   color: #FFFFFF;
@@ -14,7 +14,7 @@ button {
   font-family: var(--font-serif);
 }
 
-/* Bouton "Envoyer" (Gris sur formulaire contact) */
+
 .btn-submit {
   background-color: #383838;
   color: #FFFFFF;
@@ -25,7 +25,7 @@ button {
   align-self: flex-start;
 }
 
-/* Bouton PDF (Gris clair) */
+
 .btn-pdf {
   display: inline-block;
   background-color: #DDDDDD;
@@ -40,7 +40,7 @@ button {
 
 
 
-/* Bouton Retour en Haut de Page */
+
 bouton-haut {
     position: fixed;
     bottom: 30px;

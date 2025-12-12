@@ -1,4 +1,4 @@
-/* --- COMPTEURS (Page Accueil) --- */
+
 .stats-container {
   display: flex;
   justify-content: center;
@@ -7,7 +7,7 @@
 }
 .stat-box {
   width: 60px; height: 60px;
-  border: 1px solid rgba(255,255,255,0.3); /* Encadrement fin */
+  border: 1px solid rgba(255,255,255,0.3); 
   background: rgba(255,255,255,0.05);
   display: flex; justify-content: center; align-items: center;
   font-family: var(--font-serif); font-size: 1.8rem;
@@ -17,15 +17,15 @@
 .stat-label { font-size: 0.7rem; letter-spacing: 2px; color: var(--color-text-muted); }
 
 
-/* --- INFOS PRATIQUES (Cartes Blanches - IMPORTANT) [cite: 135-151] --- */
+
 .ticket-card {
-  background-color: var(--color-bg-card-light); /* Fond BLANC */
-  color: var(--color-text-dark);                /* Texte NOIR */
+  background-color: var(--color-bg-card-light); /
+  color: var(--color-text-dark);                
   border-radius: var(--radius-sm);
   padding: 25px;
   margin-bottom: 20px;
   display: flex;
-  flex-direction: column; /* Mobile first */
+  flex-direction: column; 
   gap: 15px;
 }
 
@@ -43,7 +43,7 @@
 .price { font-size: 2rem; font-family: var(--font-serif); }
 
 
-/* --- SCÈNES --- */
+
 .scene-card { margin-bottom: var(--space-lg); }
 .separator { border: 0; border-top: 1px solid #333; margin: var(--space-xl) 0; }
 
