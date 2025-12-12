@@ -4,21 +4,21 @@ img {
   height: auto;
 }
 
-/* Force les images à remplir leur cadre sans déformation */
+
 .hero__image,
 .full-width-image img,
 .artist-portrait img,
 .scene-card img {
   width: 100%;
-  object-fit: cover; /* Recadre l'image intelligemment */
+  object-fit: cover; 
   border-radius: var(--radius-sm);
 }
 
 .hero__image { height: 300px; }
-.artist-portrait img { height: 400px; } /* Portrait vertical */
+.artist-portrait img { height: 400px; } 
 .scene-card img { height: 250px; }
 
-/* Filtre noir et blanc pour le style artistique */
+
 .grayscale-img {
   filter: grayscale(100%);
 }
