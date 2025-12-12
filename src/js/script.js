@@ -103,12 +103,6 @@ const btnHaut = document.getElementById('btn-retour-haut');
 */ 
 
 
-
-
-
-
-
-
 /* --- 4. MOTEUR DE RECHERCHE INTERNE --- */
 const searchForm = document.getElementById("siteSearchForm");
 const searchInput = document.getElementById("siteSearchInput");
@@ -180,11 +174,11 @@ if (searchForm) {
 
         // 3. Redirection ou Erreur
         if (foundPage) {
-            window.location.href = foundPage; // Hop, on change de page !
+            window.location.href = foundPage; 
         } else {
-            // Pas trouvé ? On affiche le message d'erreur rouge
+            // Message d'erreur
             searchError.style.display = "block";
-            // Animation : secouer le formulaire (optionnel mais sympa)
+            // Animation : secouer le formulaire si rien n'est trouvé
             searchForm.style.transform = "translateX(5px)";
             setTimeout(() => searchForm.style.transform = "translateX(0)", 100);
         }
