@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: var(--space-md);
-  position: absolute; /* Superposé au contenu */
+  position: absolute; 
   width: 100%;
   top: 0;
   z-index: 100;
@@ -13,5 +13,5 @@
 .header__logo img {
   height: 40px;
   width: auto;
-  filter: invert(1); /* Rend le logo blanc */
+  filter: invert(1); 
 }

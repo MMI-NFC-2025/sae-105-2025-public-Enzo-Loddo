@@ -1,20 +1,20 @@
-/* 1. Vendors (Librairies tierces) */
+/* Vendors */
 @import "vendors/normalize.css";
 
-/* 2. Utils (Variables) */
+
 @import "utils/variables.css";
 
-/* 3. Base (Styles globaux) */
+
 @import "base/main.css";
 @import "base/media.css";
 
-/* 4. Layout (Structure de page) */
+
 @import "layout/header.css";
 @import "layout/footer.css";
 @import "layout/section.css";
 
-/* 5. Components (Éléments réutilisables) */
+
 @import "components/menu.css";
 @import "components/button.css";
-@import "components/card.css";   /* Gère les scènes, stats et billets */
-@import "components/form.css";   /* Gère la page contact */
+@import "components/card.css";   
+@import "components/form.css";   

@@ -6,7 +6,7 @@
   font-size: 0.9rem;
 }
 
-/* Grille Responsive (1 colonne mobile, 4 colonnes desktop) */
+
 .footer-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -20,16 +20,16 @@
   }
 }
 
-/* Navigation verticale (Liens les uns sous les autres) */
+
 .footer-nav {
   display: flex;
-  flex-direction: column; /* C'est cette ligne qui met les liens en colonne */
-  gap: 15px; /* Espace entre chaque lien */
+  flex-direction: column; 
+  gap: 15px; 
   font-family: var(--font-serif);
   font-size: 1.1rem;
 }
 
-/* Titres de section */
+
 .footer-section h3 {
   font-family: var(--font-sans);
   font-weight: 700;
@@ -58,19 +58,19 @@
 
 .footer-top {
   display: flex;
-  justify-content: space-between; /* Pousse le menu à gauche et le logo à droite */
-  align-items: flex-start;        /* Aligne les éléments en haut */
+  justify-content: space-between; 
+  align-items: flex-start;        
   width: 100%;
   margin-bottom: var(--space-lg);
 }
 
 
 .footer-deco img {
-  width: 60px; /* Changez cette valeur pour réduire la taille (ex: 50px, 40px) */
+  width: 60px; 
   height: auto;
-  filter: invert(1); /* Assure que le logo est blanc sur fond noir */
+  filter: invert(1); 
   
-  /* Si vous voulez le coller encore plus à droite */
+  
   display: block;
   margin-left: auto; 
 }
