@@ -42,24 +42,24 @@
 }
 
 
-/* --- LE MENU DE NAVIGATION --- */
+
 .menu {
-  position: fixed; /* Fixe pour couvrir tout l'écran */
-  inset: 0;        /* top:0, right:0, bottom:0, left:0 */
-  background-color: var(--color-bg); /* Fond noir */
-  z-index: 150;    /* En dessous du bouton mais au-dessus du reste */
-  padding: 100px 40px; /* Espace pour ne pas toucher le header */
+  position: fixed; 
+  inset: 0;        
+  background-color: var(--color-bg); 
+  z-index: 150;    
+  padding: 100px 40px; 
   display: flex;
   flex-direction: column;
   gap: 20px;
   
-  /* Animation d'apparition */
+  
   opacity: 1;
   transform: translateX(0);
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-/* Style de la liste dans le menu */
+
 .menu ul {
   list-style: none;
   padding: 0;
@@ -68,7 +68,7 @@
 
 .menu a {
   font-family: var(--font-serif);
-  font-size: 2rem; /* Gros texte comme sur la maquette */
+  font-size: 2rem; 
   color: var(--color-text);
   text-decoration: none;
   display: block;
@@ -80,12 +80,11 @@
   color: var(--color-text-muted);
 }
 
-/* --- ÉTAT CACHÉ (Géré par l'attribut hidden) --- */
-/* Quand l'attribut hidden est présent */
+
 .menu[hidden] {
-  display: block; /* On surcharge le display:none par défaut pour animer */
+  display: block;
   opacity: 0;
-  transform: translateX(100%); /* Poussé vers la droite */
-  pointer-events: none; /* On ne peut pas cliquer dessus quand caché */
-  visibility: hidden; /* Pour l'accessibilité */
+  transform: translateX(100%); 
+  pointer-events: none; 
+  visibility: hidden; 
 }

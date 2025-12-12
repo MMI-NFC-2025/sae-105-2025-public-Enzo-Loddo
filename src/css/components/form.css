@@ -3,11 +3,11 @@
   margin: 0 auto;
 }
 
-/* La "Carte" grise qui contient le formulaire */
+
 form {
-  background-color: var(--color-bg-card-dark); /* #121212 */
+  background-color: var(--color-bg-card-dark); 
   padding: var(--space-lg);
-  border-radius: var(--radius-lg); /* 30px */
+  border-radius: var(--radius-lg); 
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -25,11 +25,11 @@ label {
   font-size: 0.9rem;
 }
 
-/* Champs de saisie arrondis et gris clair */
+/
 input, textarea {
-  background-color: var(--color-input); /* #D9D9D9 */
+  background-color: var(--color-input); 
   border: none;
-  border-radius: var(--radius-md);      /* 15px */
+  border-radius: var(--radius-md);     
   padding: 12px 20px;
   font-family: var(--font-sans);
   color: #000;
