@@ -102,3 +102,93 @@ const btnHaut = document.getElementById('btn-retour-haut');
 - 404.html
 - Artiste2.html
 */ 
+
+
+
+
+
+/* src/js/script.js */
+
+// ... (votre code menu et carrousel existe déjà au dessus) ...
+
+
+/* --- 4. MOTEUR DE RECHERCHE INTERNE --- */
+const searchForm = document.getElementById("siteSearchForm");
+const searchInput = document.getElementById("siteSearchInput");
+const searchError = document.getElementById("searchError");
+
+// NOTRE "DICTIONNAIRE" DE REDIRECTION
+// Mot-clé (en minuscule) : "Nom du fichier HTML"
+const pagesMap = {
+    // Page Accueil
+    "accueil": "index.html",
+    "home": "index.html",
+    "chorus": "index.html",
+
+    // Page Festival
+    "festival": "Le festival.html",
+    "histoire": "Le festival.html",
+    "citadelle": "Le festival.html",
+
+    // Page Programmation
+    "programme": "La programmation.html",
+    "heure": "La programmation.html",
+    "date": "La programmation.html",
+    "concert": "La programmation.html",
+
+    // Page Artistes
+    "artiste": "Artiste.html",
+    "chanteur": "Artiste.html",
+    "groupe": "Artiste.html",
+    "marc": "Artiste.html",   // Pour Marc Lavoine
+    "khatia": "Artiste.html", // Pour Khatia
+
+    // Page Scènes
+    "scene": "Scénes.html",
+    "lieu": "Scénes.html",
+    "carte": "Scénes.html",
+
+    // Page Infos Pratiques
+    "info": "Info pratique.html",
+    "billet": "Info pratique.html",
+    "tarif": "Info pratique.html",
+    "prix": "Info pratique.html",
+    "acheter": "Info pratique.html",
+
+    // Page Contact
+    "contact": "Contact.html",
+    "mail": "Contact.html",
+    "message": "Contact.html"
+};
+
+if (searchForm) {
+    searchForm.addEventListener("submit", (e) => {
+        e.preventDefault(); // Empêche le rechargement de la page
+        searchError.style.display = "none"; // Cache l'erreur précédente
+
+        // 1. On récupère ce que l'utilisateur a écrit (en minuscule et sans espaces inutiles)
+        const query = searchInput.value.toLowerCase().trim();
+
+        let foundPage = null;
+
+        // 2. On cherche si un mot-clé existe dans la recherche
+        // Exemple : Si l'utilisateur tape "je veux un billet", on trouve "billet"
+        for (const [keyword, url] of Object.entries(pagesMap)) {
+            if (query.includes(keyword)) {
+                foundPage = url;
+                break; // On a trouvé, on arrête de chercher
+            }
+        }
+
+        // 3. Redirection ou Erreur
+        if (foundPage) {
+            window.location.href = foundPage; // Hop, on change de page !
+        } else {
+            // Pas trouvé ? On affiche le message d'erreur rouge
+            searchError.style.display = "block";
+            // Animation : secouer le formulaire (optionnel mais sympa)
+            searchForm.style.transform = "translateX(5px)";
+            setTimeout(() => searchForm.style.transform = "translateX(0)", 100);
+        }
+    });
+}
