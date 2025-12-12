@@ -107,9 +107,7 @@ const btnHaut = document.getElementById('btn-retour-haut');
 
 
 
-/* src/js/script.js */
 
-// ... (votre code menu et carrousel existe déjà au dessus) ...
 
 
 /* --- 4. MOTEUR DE RECHERCHE INTERNE --- */
@@ -117,8 +115,7 @@ const searchForm = document.getElementById("siteSearchForm");
 const searchInput = document.getElementById("siteSearchInput");
 const searchError = document.getElementById("searchError");
 
-// NOTRE "DICTIONNAIRE" DE REDIRECTION
-// Mot-clé (en minuscule) : "Nom du fichier HTML"
+// Dictionnaire pour retrouver les mots 
 const pagesMap = {
     // Page Accueil
     "accueil": "index.html",
@@ -140,8 +137,10 @@ const pagesMap = {
     "artiste": "Artiste.html",
     "chanteur": "Artiste.html",
     "groupe": "Artiste.html",
-    "marc": "Artiste.html",   // Pour Marc Lavoine
-    "khatia": "Artiste.html", // Pour Khatia
+    "marc": "Artiste.html",   
+    "khatia": "Artiste.html",
+    "pianiste": "Artiste.html",
+
 
     // Page Scènes
     "scene": "Scénes.html",
