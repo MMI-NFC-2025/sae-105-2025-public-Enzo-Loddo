@@ -5,7 +5,7 @@
   width: 30px;
   height: 24px;
   position: relative;
-  z-index: 200; /* Doit être au-dessus du menu ouvert */
+  z-index: 200; 
   padding: 0;
 }
 
@@ -13,20 +13,19 @@
   display: block;
   width: 100%;
   height: 2px;
-  background-color: var(--color-text); /* Blanc par défaut */
+  background-color: var(--color-text); 
   position: absolute;
   left: 0;
   border-radius: 2px;
-  transition: all 0.3s ease-in-out; /* Animation fluide */
+  transition: all 0.3s ease-in-out; 
 }
 
-/* Positionnement des 3 barres au repos */
+
 .menu-button span:nth-child(1) { top: 0; }
 .menu-button span:nth-child(2) { top: 50%; transform: translateY(-50%); }
 .menu-button span:nth-child(3) { bottom: 0; }
 
-/* --- ÉTAT OUVERT (Transformation en Croix) --- */
-/* Quand aria-expanded="true" (ajouté par le JS) */
+
 .menu-button[aria-expanded="true"] span:nth-child(1) {
   top: 50%;
   transform: translateY(-50%) rotate(45deg);
@@ -88,10 +87,10 @@
   pointer-events: none; 
   visibility: hidden; 
 }
-/* --- BARRE DE RECHERCHE DANS LE MENU --- */
+
 
 .menu-search-container {
-    margin-bottom: 30px; /* Espace avant les liens */
+    margin-bottom: 30px; 
     width: 100%;
     max-width: 400px;
 }
@@ -99,13 +98,13 @@
 #siteSearchForm {
     display: flex;
     align-items: center;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.5); /* Ligne blanche semi-transparente */
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5); 
     padding-bottom: 5px;
     transition: border-color 0.3s;
 }
 
 #siteSearchForm:focus-within {
-    border-color: #FFFFFF; /* Devient blanc pur quand on clique */
+    border-color: #FFFFFF; 
 }
 
 #siteSearchInput {

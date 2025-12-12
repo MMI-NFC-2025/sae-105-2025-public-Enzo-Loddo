@@ -50,7 +50,6 @@ if (carrousel && btnGauche && btnDroite) {
             });
         }
     });
-
     // Flèche GAUCHE
     btnGauche.addEventListener("click", () => {
         const carte = carrousel.querySelector(".carte");
@@ -191,3 +190,14 @@ if (searchForm) {
         }
     });
 }
+/* Menu présent sur toutes les pages :
+- index.html
+- Le festival.html
+- La programmation.html
+- Artiste.html
+- scénes.html
+- Info pratique.html
+- Contact.html
+- 404.html
+- Artiste2.html
+*/ 
